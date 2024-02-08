@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>GMDB</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <span><a href="#">GMDB</a></span>
+        <span><a href="#">Home</a></span>
+        <span><a href="#">Login</a></span>
+        <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <form id="login" action="/login" method="post">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        
+        <input type="submit" value="Login">
+    </form>
+    
+</body>
+</html>
