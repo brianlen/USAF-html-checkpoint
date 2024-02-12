@@ -1,7 +1,25 @@
-nav span, nav form {
-    display: inline-block;
+body {
+    font-family: Arial, sans-serif;
 }
 
-body form#login {
+.navbar {
+    background-color: #000000;
+    align-items: center;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: #ffffff;
+    float: left;
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.navbar form {
+    float: right;
+    align-items: center;
+}
+
+#login {
     text-align: center;
 }

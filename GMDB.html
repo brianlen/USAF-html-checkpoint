@@ -7,25 +7,30 @@
 </head>
 
 <body>
-    <nav>
-        <span><a href="#">GMDB</a></span>
-        <span><a href="#">Home</a></span>
-        <span><a href="#">Login</a></span>
-        <form action="/search" method="get">
-            <input type="text" name="q" placeholder="Search">
-            <button type="submit">Search</button>
-        </form>
-    </nav>
-
-    <form id="login" action="/login" method="post">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br>
+    <div class="navbar">
+        <a href="#GMDB">GMDB</a>
+        <a href="#home">Home</a>
+        <a href="#login">Login</a>
         
-        <input type="submit" value="Login">
-    </form>
+        <form action="/search" method="get">
+            <input type="text" id="search" name="search" placeholder="Search...">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     
+
+    <div id="login">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    
+
 </body>
 </html>
